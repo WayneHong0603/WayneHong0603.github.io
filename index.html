@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Counter</title>
+<style>
+body{font-family:system-ui,sans-serif;display:grid;place-items:center;min-height:100vh;margin:0}
+main{text-align:center}
+#count{font-size:4rem;margin:0 0 1rem}
+button{font-size:1.25rem;padding:.6rem 1.6rem;cursor:pointer}
+</style>
+</head>
+<body>
+<main>
+<p id="count">0</p>
+<button id="btn" type="button">+1</button>
+</main>
+<script>
+let n = 0;
+const el = document.getElementById('count');
+document.getElementById('btn').addEventListener('click', () => { el.textContent = ++n; });
+</script>
+</body>
+</html>
